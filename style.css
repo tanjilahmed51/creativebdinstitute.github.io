@@ -13,7 +13,7 @@ body {
   font-size: 16px;
   line-height: 25px;
   margin: auto;
-  background: rgba(223, 216, 216, 0.69);
+  background: #eaeaea;
 }
 h1,
 h2,
@@ -123,6 +123,53 @@ p {
 }
 .btn a:hover {
   color: black;
+}
+.aboutCEO {
+  width: 100%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.582);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 5px solid rgba(14, 13, 95, 0.349);
+}
+.ceoDetails {
+  text-align: right;
+  width: 50%;
+  float: left;
+  padding: 60px 0px 0px 300px;
+  font-family: "work sans";
+}
+.ceoDetails h1 {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 10px;
+  word-spacing: 6px;
+}
+.ceoDetails h3 {
+  color: rgb(57 9 152 / 92%);
+  font-weight: bolder;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.ceoDetails p {
+  font-size: 18px;
+}
+.ceoPic {
+  width: 50%;
+  float: left;
+  padding: 68px;
+  padding-left: 180px;
+}
+.ceoPic img {
+  width: 250px;
+  height: 250px;
+  /* transform: skew(-5deg, 0deg);
+  position: relative;
+  border-left: 10px solid rgba(14, 13, 95, 0.74);
+  border-right: 10px solid rgba(14, 13, 95, 0.74); */
+  border: 8px solid rgba(14, 13, 95, 0.74);
+  border-radius: 50%;
 }
 .box {
   float: left;
