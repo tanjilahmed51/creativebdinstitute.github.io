@@ -220,7 +220,7 @@ p {
   transform: skew(-10deg, 0deg);
   position: relative;
   padding-left: 7px;
-  border-left: 10px solidrgb(71 71 131 / 85%);
+  border-left: 10px solid rgba(14, 13, 95, 0.856);
 }
 .box {
   float: left;
