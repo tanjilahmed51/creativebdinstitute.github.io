@@ -164,6 +164,7 @@ p {
 .ceoPic img {
   width: 250px;
   height: 250px;
+  padding: 2px;
   /* transform: skew(-5deg, 0deg);
   position: relative;
   border-left: 10px solid rgba(14, 13, 95, 0.74);
@@ -420,6 +421,11 @@ p {
   padding-bottom: 15px;
   font-size: 30px;
   font-weight: 700;
+}
+.wbox {
+  height: 150px;
+  width: 670px;
+  overflow: hidden;
 }
 .workDEtails {
   width: 335px;
