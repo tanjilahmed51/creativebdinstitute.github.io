@@ -5,7 +5,7 @@
 }
 .container {
   width: 1170px;
-  margin: auto auto 20px;
+  margin: auto;
   border: 1px;
 }
 body {
@@ -37,6 +37,8 @@ p {
   margin: 10px auto 20px;
   background: rgb(15, 13, 95);
   border-radius: 80px;
+  position: sticky;
+  top: 0;
 }
 .header img {
   width: 155px;
@@ -44,6 +46,7 @@ p {
 }
 .right {
   float: right;
+  display: table;
 }
 .right ul li {
   display: inline-block;
@@ -51,6 +54,7 @@ p {
   margin-right: 50px;
   padding: 5px;
   transition: all 0.5s ease 0s;
+  position: relative;
 }
 .right ul li a {
   text-decoration: none;
@@ -67,6 +71,37 @@ p {
   color: rgba(10, 10, 10, 0.933);
   text-decoration: none;
 }
+.subManu {
+  width: 200px;
+  list-style: none;
+  position: absolute;
+  top: unset;
+  background: #0f0d5fc4;
+  transform: scaleY(0);
+  transform-origin: top;
+  transform: 0.3s;
+  visibility: hidden;
+}
+.subManu li {
+  float: none;
+}
+.right ul li:hover .subManu {
+  visibility: visible !important;
+  transform: scaleY(1) !important;
+}
+.subManu li a {
+  padding-top: 5px !important;
+  position: relative;
+  font-size: 14px;
+}
+/* .subManu li a:before {
+  content: "";
+  background: rgba(245, 114, 6, 0.933);
+  width: 20px;
+  height: 2px;
+  margin-right: 10px;
+  vertical-align: middle;
+} */
 .slider {
   background: linear-gradient(rgba(0, 0, 0, 0.78), transparent 300px) center
       center / cover no-repeat,
@@ -160,6 +195,9 @@ p {
   float: left;
   padding: 68px;
   padding-left: 180px;
+}
+.ceoPic:hover {
+  cursor: pointer;
 }
 .ceoPic img {
   width: 250px;
@@ -311,25 +349,28 @@ p {
   transition: 0.3s;
 }
 .emimg:hover .emsocialIcon a:first-child {
-  opacity: 10;
+  opacity: 1;
   transform: translateX(20px);
 }
 .emimg:hover .emsocialIcon a:nth-child(2) {
-  opacity: 10;
+  opacity: 1;
   transform: translateY(20px);
 }
 .emimg:hover .emsocialIcon a:nth-child(3) {
   transform: translateY(20px);
-  opacity: 10;
+  opacity: 1;
 }
 .emimg:hover .emsocialIcon a:last-child {
   transform: translateY(20px);
-  opacity: 10;
+  opacity: 1;
 }
 .firstPerson:hover .emimg img {
   transform: skew(1.1);
 }
 .firstPerson:hover {
+  cursor: pointer;
+}
+.secoundPerson:hover {
   cursor: pointer;
 }
 .box {
