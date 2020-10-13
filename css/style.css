@@ -1,0 +1,809 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+  border: 1px;
+}
+body {
+  font-family: arial;
+  font-size: 16px;
+  line-height: 25px;
+  margin: auto;
+  background: #eaeaea;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+  font-family: "work sans";
+}
+p {
+  font-family: "work sans";
+}
+.header {
+  width: 1170px;
+  height: 50px;
+  display: block;
+  margin: 10px auto 20px;
+  background: rgb(15, 13, 95);
+  border-radius: 80px;
+  position: sticky;
+  top: 0;
+}
+.header img {
+  width: 155px;
+  margin-left: 20px;
+}
+.right {
+  float: right;
+  display: table;
+}
+.right ul li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 50px;
+  padding: 5px;
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+.right ul li a {
+  text-decoration: none;
+  padding: 4px 14px;
+  color: rgb(207, 211, 214);
+  border: 0px;
+}
+.right ul li:hover {
+  border-radius: 35px;
+  background: white;
+}
+.right ul li a:hover {
+  border-radius: 35px;
+  color: rgba(10, 10, 10, 0.933);
+  text-decoration: none;
+}
+.subManu {
+  width: 200px;
+  list-style: none;
+  position: absolute;
+  top: unset;
+  background: #0f0d5fc4;
+  transform: scaleY(0);
+  transform-origin: top;
+  transform: 0.3s;
+  visibility: hidden;
+}
+.subManu li {
+  float: none;
+}
+.right ul li:hover .subManu {
+  visibility: visible !important;
+  transform: scaleY(1) !important;
+}
+.subManu li a {
+  padding-top: 5px !important;
+  position: relative;
+  font-size: 14px;
+}
+/* .subManu li a:before {
+  content: "";
+  background: rgba(245, 114, 6, 0.933);
+  width: 20px;
+  height: 2px;
+  margin-right: 10px;
+  vertical-align: middle;
+} */
+.slider {
+  background: linear-gradient(rgba(0, 0, 0, 0.78), transparent 300px) center
+      center / cover no-repeat,
+    url("../img/middle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+  margin-bottom: 40px;
+}
+#sliderContent {
+  width: 600px;
+  color: rgba(252, 252, 252, 0.843);
+  padding: 30px 30px 30px 106px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float: left;
+}
+#sliderContent span {
+  color: rgba(13, 82, 232, 0.835);
+}
+#sliderContent h1 {
+  font-size: 31px;
+  font-weight: 900;
+  margin-top: 87px;
+  line-height: 50px;
+}
+#sliderContent p {
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.btn {
+  width: 110px;
+  height: 44px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgb(15, 13, 95);
+  border-bottom-left-radius: 17px;
+  border-top-right-radius: 17px;
+  margin-top: 15px;
+  background-color: rgb(15, 13, 95);
+  position: relative;
+  transition: all 0.8s ease 0s;
+  margin-left: 30px;
+}
+.btn:hover {
+  background: white;
+  border: none;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.btn a:hover {
+  color: black;
+}
+.aboutCEO {
+  width: 100%;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.582);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 5px solid rgba(14, 13, 95, 0.349);
+}
+.ceoDetails {
+  text-align: right;
+  width: 50%;
+  float: left;
+  padding: 60px 0px 0px 300px;
+  font-family: "work sans";
+}
+.ceoDetails h1 {
+  margin-top: 30px;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 10px;
+  word-spacing: 6px;
+}
+.ceoDetails h3 {
+  color: rgb(10, 72, 212);
+  font-weight: bolder;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+.ceoDetails p {
+  font-size: 18px;
+}
+.ceoPic {
+  width: 50%;
+  float: left;
+  padding: 68px;
+  padding-left: 180px;
+}
+.ceoPic:hover {
+  cursor: pointer;
+}
+.ceoPic img {
+  width: 250px;
+  height: 250px;
+  padding: 2px;
+  /* transform: skew(-5deg, 0deg);
+  position: relative;
+  border-left: 10px solid rgba(14, 13, 95, 0.74);
+  border-right: 10px solid rgba(14, 13, 95, 0.74); */
+  border: 8px solid rgba(14, 13, 95, 0.74);
+  border-radius: 50%;
+}
+.socilaIcons {
+  padding-left: 42px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.socilaIcons a {
+  padding-right: 15px;
+  transition: 0.3s;
+}
+.socilaIcons a :hover {
+  color: rgba(15, 15, 15, 0.87);
+  border-radius: 100%;
+}
+.socilaIcons a:first-child {
+  color: #3b5998;
+  opacity: 0;
+  transition: 0.9s;
+}
+.socilaIcons a:nth-child(2) {
+  color: #b23121;
+  opacity: 0;
+  transition: 0.7s;
+}
+.socilaIcons a:nth-child(3) {
+  color: #0e76a8;
+  opacity: 0;
+  transition: 0.5s;
+}
+.socilaIcons a:last-child {
+  color: #f2003c;
+  opacity: 0;
+  transition: 0.3s;
+}
+.ceoPic:hover .socilaIcons a:first-child {
+  opacity: 10;
+  transform: translateY(20px);
+}
+.ceoPic:hover .socilaIcons a:nth-child(2) {
+  opacity: 10;
+  transform: translateY(20px);
+}
+.ceoPic:hover .socilaIcons a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 10;
+}
+.ceoPic:hover .socilaIcons a:last-child {
+  transform: translateY(20px);
+  opacity: 10;
+}
+#em {
+  height: 700px;
+}
+.employes {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 100px;
+  font-size: 30px;
+  text-decoration: underline;
+  color: rgba(14, 13, 95, 0.74);
+}
+.Row {
+  width: 50%;
+  float: left;
+}
+.firstPerson {
+  padding-left: 50px;
+  overflow: hidden;
+  padding-bottom: 80px;
+}
+.secoundPerson {
+  padding-left: 50px;
+  padding-bottom: 80px;
+}
+.emDetails {
+  float: left;
+  width: 250px;
+  padding-top: 40px;
+  padding-right: 40px;
+  text-align: right;
+}
+.emDetails h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.emDetails h3 {
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(11, 8, 189);
+}
+.emimg {
+  float: left;
+  position: relative;
+  /* overflow: hidden; */
+}
+.emimg img {
+  width: 200px;
+  height: 230px;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  padding-left: 7px;
+  border-left: 10px solid rgba(14, 13, 95, 0.856);
+}
+.emsocialIcon {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.emsocialIcon a i {
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+  margin-right: 13px;
+}
+.emsocialIcon a i:hover {
+  color: rgba(247, 241, 241, 0.808);
+}
+.emsocialIcon a:first-child {
+  color: #3b5998;
+  opacity: 0;
+  transition: 0.9s;
+}
+.emsocialIcon a:nth-child(2) {
+  color: #b23121;
+  opacity: 0;
+  transition: 0.7s;
+}
+.emsocialIcon a:nth-child(3) {
+  color: #0e76a8;
+  opacity: 0;
+  transition: 0.5s;
+}
+.emsocialIcon a:last-child {
+  color: #f2003c;
+  opacity: 0;
+  transition: 0.3s;
+}
+.emimg:hover .emsocialIcon a:first-child {
+  opacity: 1;
+  transform: translateX(20px);
+}
+.emimg:hover .emsocialIcon a:nth-child(2) {
+  opacity: 1;
+  transform: translateY(20px);
+}
+.emimg:hover .emsocialIcon a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.emimg:hover .emsocialIcon a:last-child {
+  transform: translateY(20px);
+  opacity: 1;
+}
+.firstPerson:hover .emimg img {
+  transform: skew(1.1);
+}
+.firstPerson:hover {
+  cursor: pointer;
+}
+.secoundPerson:hover {
+  cursor: pointer;
+}
+.box {
+  float: left;
+  width: 260px;
+  margin-top: 50px;
+  margin-right: 30px;
+  padding: 50px;
+  text-align: center;
+  background: white;
+  color: rgb(15, 13, 95);
+  transition: all 0.5s ease 0s;
+  font-family: sans-serif;
+  margin-bottom: 90px;
+}
+.box h2 {
+  padding-bottom: 10px;
+}
+.box:hover {
+  background: rgb(15, 13, 95);
+  color: white;
+}
+.about {
+  background: white;
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px;
+  overflow: hidden;
+}
+#aboutContent img {
+  width: 450px;
+  margin-left: 30px;
+  border: 2px solid rgb(15, 13, 95);
+  padding: 50px;
+  margin-top: 40px;
+}
+.aboutMain {
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+  float: right;
+  padding: 30px;
+  margin-right: 80px;
+  font-size: large;
+  font-weight: 800;
+  color: rgb(27, 8, 56);
+}
+.aboutMain sup {
+  color: rgb(15, 13, 95);
+  font-weight: 900;
+}
+#whyUs {
+  background: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)) center
+      center / cover no-repeat,
+    url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  color: rgba(255, 255, 255, 0.847);
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.iconWrapper {
+  overflow: hidden;
+}
+.singleIcon {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  width: 290px;
+  float: left;
+}
+.singleIcon h2 {
+  font-size: 35px;
+  font-weight: 900;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.singleIcon h4 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 15px;
+}
+.icon {
+  font-size: 40px;
+}
+#pricing {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 10px;
+  width: 100%;
+  height: 770px;
+}
+.priceTitle {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.priceTitle h1 {
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 38px;
+  color: rgb(15, 13, 95);
+}
+.priceTitle p {
+  margin-top: 8px;
+  margin-bottom: 45px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.priceTag {
+  width: 350px;
+  height: 600px;
+  line-height: 35px;
+  float: left;
+  margin-bottom: 60px;
+  background: rgba(255, 255, 255, 0.686);
+  padding: 50px;
+  display: inline-block;
+  margin-right: 38px;
+  text-decoration: none;
+  list-style: none;
+}
+.priceTag h2 {
+  font-weight: 500;
+  font-size: 32px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+  text-align: center;
+  color: rgb(15, 13, 95);
+}
+.priceTag h1 {
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(15, 13, 95);
+}
+.priceTag ul li {
+  text-decoration: none;
+  list-style: none;
+}
+.priceTag ul li i {
+  color: rgb(15, 13, 95);
+  padding-right: 10px;
+}
+.priceTag ul li:last-child {
+  margin-bottom: 90px;
+}
+.priceTag button {
+  padding: 12px 28px;
+  background: rgb(15, 13, 95);
+  margin-left: 20px;
+  transition: all 0.2s ease 0s;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.priceTag button:hover {
+  background: rgb(37, 37, 37);
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+}
+.priceTag button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+#ourWork {
+  width: 100%;
+  height: 540px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.picture {
+  background: url(../img/ideas.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.workContent {
+  width: 50%;
+  height: 100%;
+  background: rgb(34, 34, 34);
+  color: white;
+  overflow: hidden;
+}
+.workTitle {
+  padding: 50px;
+  font-family: Cambria, Cochin, Georgia, serif;
+  font-size: 17px;
+  word-spacing: 3px;
+  width: 100%;
+}
+.workTitle h2 {
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.wbox {
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+.workDEtails {
+  width: 50%;
+  float: left;
+  padding: 40px;
+  font-family: Cambria, Cochin, Georgia, serif;
+  font-size: 17px;
+}
+.wIncon {
+  font-size: 45px;
+  margin-right: 15px;
+  float: left;
+  color: rgb(39, 96, 219);
+}
+.wInfo {
+  float: right;
+  width: 176px;
+}
+.wInfo h2 {
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wInfo h2:hover {
+  color: rgb(39, 96, 219);
+}
+#footer {
+  background: #1a1a1a;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 60px auto auto;
+  padding: 20px;
+}
+.footerManu {
+  overflow:hidden;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(74, 74, 74, 0.616);
+  margin-top: 130px;
+  font-family: sans-serif;
+}
+.footerAbout {
+  width: 255px;
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
+}
+.footerAbout h2 {
+  font-size: 22px;
+  font-weight: bolder;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.9)
+}
+.footerAbout p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #ababab;
+}
+.footerIcons {
+  font-size: 15px;
+  color: #ababab;
+}
+.footerIcons i {
+  padding-right: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+.footerIcons i:hover {
+  color: #2760db;
+}
+
+.footerContactUs h2 {
+  font-size: 22px;
+  font-weight: bolder;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.contactusWrapper {
+  overflow: hidden;
+  color: #ababab;
+}
+.adress {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 8px;
+}
+.phone {
+  padding-bottom: 8px;
+}
+.contactIcons {
+  width: 12%;
+  float: left;
+  color: #2760db;
+  padding-top: 2px;
+}
+.contactInfo {
+  width: 88%;
+  float: left;
+}
+.footerContactUs {
+  width: 285px;
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
+}
+.footerHelpfulLinks {
+  width: 285px;
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
+}
+.footerHelpfulLinks h2 {
+  font-size: 22px;
+  font-weight: bolder;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.helpfullinksAbout {
+  padding: 0px 10px;
+}
+.helpfullinksAbout ul li {
+  list-style: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px dashed rgba(74, 74, 74, 0.616);
+}
+.helpfullinksAbout ul li:first-child {
+  padding-top: 0px;
+}
+.helpfullinksAbout ul li:last-child {
+  border-bottom: none;
+}
+.helpfullinksAbout ul li a {
+  color: #ababab;
+  text-decoration: none;
+}
+.helpfullinksAbout ul li a i {
+  font-size: 12px;
+  padding-right: 8px;
+  font-weight: 600;
+}
+.footerRecentPost {
+  width: 285px;
+  float: left;
+  margin-right: 15px;
+  padding: 15px;
+}
+.footerRecentPost h2 {
+  font-size: 22px;
+  font-weight: bolder;
+  padding-bottom: 22px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.recentpostWrepper {
+  overflow: hidden;
+}
+.recentpostSection {
+  width: 100%;
+  overflow: hidden;
+}
+.recentpostSectiontwo {
+  width: 100%;
+  overflow: hidden;
+}
+.recentpostDate {
+  width: 100%;
+  overflow: hidden;
+}
+.recentpostDateIndevidual {
+  width: 20%;
+  float: left;
+  background: rgb(49 49 49);
+  height: 60px;
+  margin-bottom: 10px;
+}
+.recentpostDateIndevidual h2 {
+  padding: 9px 13px;
+  height: 50%;
+  font-weight: bolder;
+  color: white;
+}
+.recentpostDateIndevidual small {
+  padding: 0px 13px;
+  text-align: center;
+  font-size: 8px;
+  width: 25px;
+  height: 50%;
+  font-weight: bolder;
+  color: white;
+}
+.recentpostDetails {
+  width: 80%;
+  float: left;
+  padding: 0px 10px 0px 30px;
+  font-size: 14px;
+  font-weight: bolder;
+  font-family:Tahoma, Verdana, sans-serif;
+  color: #ababab
+}
+.copyRight {
+  width: 100%;
+  height: 60px;
+  padding-top: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ababab;
+  font-size: 18px;
+}
+.crightDetsils {
+  float: left;
+  width: 50%;
+}
+.crightLists {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+}
+.crightLists ul {
+  padding-left: 245px;
+}
+.crightLists ul li {
+  list-style: none;
+  width: 30px;
+  float: left;
+  padding: 0px 35px;
+}
+.crightLists ul li a {
+  color: #ababab;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
